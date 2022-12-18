@@ -11,5 +11,5 @@ def get_sum(path):
     sacs = get_sacs(path)
     result = 0
     for sac in sacs:
-        result += VALUES[sac.get_common_item()]
+        result += VALUES[sac.common_item]
     return result

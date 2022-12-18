@@ -1,5 +1,7 @@
-from .solvers.part_1 import get_sum
-from.constants import VALUES
+from .solvers.part_1 import get_sum as part_1
+from .solvers.part_2 import get_sum as part_2
 
-print(VALUES)
-print(get_sum('day_3/data/input_3.txt'))
+result = part_1('day_3/data/input_3.txt')
+print(f"Part 1:\n{result}")
+result = part_2('day_3/data/input_3.txt')
+print(f"Part 2:\n{result}")

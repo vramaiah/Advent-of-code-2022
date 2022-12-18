@@ -12,10 +12,18 @@ class Rucsack:
         self.compartment_1 = Compartment(sac_string[:length_sac])
         self.compartment_2 = Compartment(sac_string[length_sac:])
 
-    def get_common_item(self):
+    @property
+    def common_item(self):
         section_1_items = self.compartment_1.items
         for item in section_1_items:
             if item in self.compartment_2.items:
                 return item
             else:
                 continue
+
+    @property
+    def items(self):
+        item_set_1 = list(self.compartment_1.items)
+        item_set_2 = list(self.compartment_2.items)
+        item_set_1.extend(item_set_2)
+        return tuple(item_set_1)
