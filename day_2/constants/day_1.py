@@ -1,15 +1,5 @@
-"""
-Module containing constants for the day 2 puzzle
-"""
-ROCK = 1
-PAPER = 2
-SCISSORS = 3
-LOSE = 0
-DRAW = 3
-WIN = 6
-ELF_ROCK = 'A'
-ELF_PAPER = 'B'
-ELF_SCISSORS = 'C'
+from . import *
+
 ME_ROCK = 'X'
 ME_PAPER = 'Y'
 ME_SCISSORS = 'Z'

@@ -2,12 +2,12 @@
 A module containing code to solve the day 2 puzzle
 """
 
-from .constants import RULES
+from constants.day_1 import RULES as DAY_1_RULES
 
 def get_outcome(match: str):
     """Gets the outcome for one game"""
     match_list = match.split(' ')
-    results = RULES[tuple(match_list)]
+    results = DAY_1_RULES[tuple(match_list)]
     return results
 
 def get_total_outcome(path: str):
