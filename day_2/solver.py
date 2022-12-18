@@ -6,8 +6,8 @@ from .constants import RULES
 
 def get_outcome(match: str):
     """Gets the outcome for one game"""
-    match_tuple = tuple(match.split(' '))
-    results = RULES[match_tuple]
+    match_list = match.split(' ')
+    results = RULES[tuple(match_list)]
     return results
 
 def get_total_outcome(path: str):
