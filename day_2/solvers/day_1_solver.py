@@ -2,7 +2,7 @@
 A module containing code to solve the day 2 puzzle
 """
 
-from constants.day_1 import RULES as DAY_1_RULES
+from day_2.constants.day_1 import RULES as DAY_1_RULES
 
 def get_outcome(match: str):
     """Gets the outcome for one game"""
