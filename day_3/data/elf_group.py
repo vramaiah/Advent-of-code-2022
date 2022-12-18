@@ -2,17 +2,17 @@
 Module with code to model a group of elves
 """
 
+from .rucksack import Rucksack
 
-from .rucksack import Rucsack
 
 class ElfGroup:
     """Class to model a group of elves"""
 
     def __init__(self, string: str):
         raw_sacks = string.strip().split('\n')
-        self.sac_1 = Rucsack(raw_sacks[0])
-        self.sac_2 = Rucsack(raw_sacks[1])
-        self.sac_3 = Rucsack(raw_sacks[2])
+        self.sac_1 = Rucksack(raw_sacks[0])
+        self.sac_2 = Rucksack(raw_sacks[1])
+        self.sac_3 = Rucksack(raw_sacks[2])
 
     @property
     def common_item(self):

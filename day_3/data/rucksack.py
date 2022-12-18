@@ -4,8 +4,10 @@ Module with code to model a rucksack
 
 from .compartment import Compartment
 
-class Rucsack:
+
+class Rucksack:
     """Class to model a rucksack"""
+
     def __init__(self, sac_string: str):
         sac_string = sac_string.strip()
         length_sac = len(sac_string) // 2
