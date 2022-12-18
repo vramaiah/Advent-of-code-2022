@@ -1,14 +1,14 @@
 """
-A module containing code to solve the day 2 puzzle, part 1
+A module containing code to solve the day 2 puzzle, part 2
 """
 
-from day_2.constants.day_1 import RULES as DAY_1_RULES
+from day_2.constants.day_2 import RULES as DAY_2_RULES
 
 
 def get_outcome(match: str):
     """Gets the outcome for one game"""
     match_list = match.split(' ')
-    results = DAY_1_RULES[tuple(match_list)]
+    results = DAY_2_RULES[tuple(match_list)]
     return results
 
 
