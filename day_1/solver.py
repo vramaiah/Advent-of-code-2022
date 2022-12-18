@@ -1,5 +1,5 @@
 """
-A module containing code to solve the puzzle
+A module containing code to solve the puzzle on day 1
 """
 
 import logging

@@ -1,0 +1,26 @@
+"""
+Module containing constants for the day 2 puzzle
+"""
+ROCK = 1
+PAPER = 2
+SCISSORS = 3
+LOSE = 0
+DRAW = 3
+WIN = 6
+ELF_ROCK = 'A'
+ELF_PAPER = 'B'
+ELF_SCISSORS = 'C'
+ME_ROCK = 'X'
+ME_PAPER = 'Y'
+ME_SCISSORS = 'Z'
+RULES = {
+    (ELF_ROCK, ME_ROCK): DRAW,
+    (ELF_ROCK, ME_PAPER): WIN,
+    (ELF_ROCK, ME_SCISSORS): LOSE,
+    (ELF_PAPER, ME_ROCK): LOSE,
+    (ELF_PAPER, ME_PAPER): DRAW,
+    (ELF_PAPER, ME_SCISSORS): WIN,
+    (ELF_SCISSORS, ME_ROCK): WIN,
+    (ELF_SCISSORS, ME_PAPER): LOSE,
+    (ELF_SCISSORS, ME_SCISSORS): DRAW
+}
