@@ -1,0 +1,14 @@
+"""
+Module containing code to solve day 3, part 1
+"""
+
+from day_4.data import get_ranges
+
+def solve(path: str):
+    """Function to solve day 4, part 1"""
+    ranges = get_ranges(path)
+    number_satisfied = 0
+    for range in ranges:
+        if range.fully_contains():
+            number_satisfied += 1
+    return number_satisfied
