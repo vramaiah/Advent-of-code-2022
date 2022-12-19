@@ -9,7 +9,7 @@ def solve(path: str):
     """Function to solve day 4, part 1"""
     ranges = get_ranges(path)
     number_satisfied = 0
-    for assign_ranges in ranges:
-        if assign_ranges.fully_contains():
+    for assign_range in ranges:
+        if assign_range.overlaps():
             number_satisfied += 1
     return number_satisfied

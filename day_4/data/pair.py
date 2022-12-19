@@ -21,3 +21,10 @@ class AssignmentPair:
         condition_1 = assign_1.fully_contains(assign_2)
         condition_2 = assign_2.fully_contains(assign_1)
         return condition_1 or condition_2
+
+    def overlaps(self):
+        assign_1 = self.assignments[0]
+        assign_2 = self.assignments[1]
+        condition_1 = assign_1.overlaps(assign_2)
+        condition_2 = assign_2.overlaps(assign_1)
+        return condition_1 or condition_2

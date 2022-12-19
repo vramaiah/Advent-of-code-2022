@@ -26,3 +26,10 @@ class Assignment:
             if item not in self:
                 return False
         return True
+
+    def overlaps(self, assignment):
+        """Returns if an assignment shares an area with this assignment"""
+        for item in assignment.items:
+            if item in self:
+                return True
+        return False
